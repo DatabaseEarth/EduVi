@@ -1,0 +1,108 @@
+body {
+    background-color: #F5F7FA;
+    max-width: 1535px;
+    /* vì trên bảng figma là layout 12 cột, màn hình 1440px */
+}
+
+aside {
+    width: 250px;
+    /* transform: translate(-50%); */
+}
+
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+
+.search {
+    width: 255px;
+    height: 50px;
+}
+
+.color-search {
+    background-color: #F5F7FA;
+    color: #8BA3CB;
+    height: 50px;
+}
+
+.menu {
+    border-left: 5px solid #fff;
+    color: #B1B1B1 !important;
+}
+
+.menu-active {
+    border-left: 5px solid #2D60FF;
+    color: #2D60FF !important;
+}
+
+.color-menu {
+    color: #B1B1B1;
+}
+
+.icon-menu {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #F5F7FA;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #718EBF;
+    font-size: 18px;
+}
+
+.avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+}
+
+article {
+    flex-grow: 1;
+    max-width: 1285px;
+    width: auto;
+}
+.category-hover{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.category-hover:hover {
+    opacity: 1;
+}
+/* ==================================================== */
+/* css làm đẹp thanh cuộn */
+/* Định dạng thanh cuộn */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Chiều rộng của thanh cuộn */
+}
+
+/* Định dạng track (phần nền của thanh cuộn) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Màu nền của track */
+}
+
+/* Định dạng thumb (phần kéo của thanh cuộn) */
+::-webkit-scrollbar-thumb {
+    background: #d5d5d5;
+    /* Màu của thumb */
+    border-radius: 5px;
+    /* Độ cong của thumb */
+}
+
+/* Hover state của thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Màu của thumb khi hover */
+}

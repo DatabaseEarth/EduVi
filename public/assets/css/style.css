@@ -1,0 +1,100 @@
+body {
+    background-color: #fff;
+}
+
+.xam-nhat {
+    background-color: #e5e5e5;
+}
+
+.nav-hover:hover {
+    color: rgb(26, 89, 235) !important;
+}
+
+.icon-xoay {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.active-xoay {
+    transform: rotate(180deg);
+}
+
+.nav-drop {
+    max-height: 0px;
+    transition: max-height 1s ease;
+    max-width: 200px;
+    /* overflow-y: hidden !important; Ẩn thanh cuộn dọc */
+}
+.nav-drop::-webkit-scrollbar {
+    width: 5px; /* Chiều rộng của thanh cuộn */
+}
+
+/* Định dạng thanh cuộn ngang */
+.nav-drop::-webkit-scrollbar-horizontal {
+    height: 8px; /* Chiều cao của thanh cuộn */
+}
+
+/* Định dạng thanh cuộn thumb */
+.nav-drop::-webkit-scrollbar-thumb {
+    background-color: #d5d5d5; /* Màu sắc của thanh cuộn */
+    border-radius: 4px; /* Độ cong của thanh cuộn */
+}
+
+.nav-drop-active {
+    max-height: 400px;
+}
+
+.bg-mo {
+    background-color: #f0f0f0;
+
+    /* Gradient background từ trái sang phải */
+    background-image: linear-gradient(to right, rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0));
+}
+
+.btn-chinh {
+    background-color: #F48C06;
+    color: #fff;
+    border: 1px solid #F48C06;
+}
+
+.btn-phu {
+    background-color: #fff;
+    color: #F48C06;
+    border: 1px solid #F48C06;
+}
+
+.item-hover {
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.nut-hover {
+    transform: translateY(50%);
+    transition: transform ease 0.5s;
+}
+
+.hover-product:hover .item-hover {
+    opacity: 1;
+}
+
+.hover-product:hover .item-hover .nut-hover {
+    transform: translateY(0%);
+}
+.product_hover img{
+    transform: scale(1);
+    transition: transform ease 0.5s;
+}
+.product_hover:hover img{
+    transform: scale(1.1);
+}
+
+
+/* ====================================================== */
+/* .login .bg-login {
+    background-image: url('../images/banner-login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+/* ====================================================== */
